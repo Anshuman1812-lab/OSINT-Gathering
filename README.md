@@ -118,3 +118,8 @@ Contributions are welcome! Please open an issue or submit a pull request on the 
 - [Shodan](https://www.shodan.io/dashboard)
 - [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/)
 - [Selenium](https://www.selenium.dev/)
+
+## Future Enhancements
+- **Integration with More OSINT Tools:** Expand the script to integrate with additional OSINT tools and services like Maltego, Censys, and VirusTotal for more comprehensive data collection.
+- **Enhanced Reporting:** Develop advanced reporting features to present the collected data in more structured formats, such as PDF reports or interactive dashboards.
+- **Automated Threat Intelligence:** Implement features for automated threat intelligence and alerts based on the collected data, including anomaly detection and real-time monitoring.
