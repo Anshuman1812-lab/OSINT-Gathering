@@ -54,33 +54,33 @@ def automate_browser(url):
 
 # Main function to collect OSINT
 def collect_info(domain, ip):
-    # # Run Recon-ng
-    # print(f"Collecting information for {domain} using Recon-ng...")
-    # run_recon_ng(domain)
+    # Run Recon-ng
+    print(f"Collecting information for {domain} using Recon-ng...")
+    run_recon_ng(domain)
 
     # Run theHarvester
     print(f"Collecting emails and subdomains for {domain} using theHarvester...")
     run_the_harvester(domain)
 
-    # # # Get Shodan information
-    # # print(f"Collecting Shodan data for {ip}...")
-    # # shodan_info = get_shodan_info(ip)
-    # # if shodan_info:
-    # #     print(shodan_info)
+    # Get Shodan information
+    print(f"Collecting Shodan data for {ip}...")
+    shodan_info = get_shodan_info(ip)
+    if shodan_info:
+        print(shodan_info)
 
-    # # # Scrape website
-    # # print(f"Scraping data from {domain}...")
-    # # links = scrape_website(f"http://{domain}")
-    # # print("Links found on the website:")
-    # # for link in links:
-    # #     print(link)
+    # Scrape website
+    print(f"Scraping data from {domain}...")
+    links = scrape_website(f"http://{domain}")
+    print("Links found on the website:")
+    for link in links:
+        print(link)
 
-    # # # Automate browser
-    # # print(f"Automating browser to collect data from {domain}...")
-    # # dynamic_links = automate_browser(f"http://{domain}")
-    # # print("Dynamic links found on the website:")
-    # # for link in dynamic_links:
-    # #     print(link)
+    # Automate browser
+    print(f"Automating browser to collect data from {domain}...")
+    dynamic_links = automate_browser(f"http://{domain}")
+    print("Dynamic links found on the website:")
+    for link in dynamic_links:
+        print(link)
 
 # Example usage
 domain = 'tesla.com'
