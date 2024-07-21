@@ -6,7 +6,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
 # Replace with your actual Shodan API key
-SHODAN_API_KEY = 'PDNldN0vlMjl3XLPphlrBFG6iRUL8JKe'
+SHODAN_API_KEY = 'Your_Shodan_API_Key'
 api = shodan.Shodan(SHODAN_API_KEY)
 
 # Function to run Recon-ng
